@@ -1,0 +1,33 @@
+.fullscreen-modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 2s ease-in-out;
+}
+
+.fullscreen-modal.show {
+  z-index: 5000;
+}
+
+.fullscreen-modal .video-content-container {
+  background-color: rgba(var(--base-color-rgb), 0.95);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+.fullscreen-modal.show .video-content-container {
+  opacity: 1;
+}
+
+/* #video-modal {
+  width: 100%;
+  height: 100%;
+} */
